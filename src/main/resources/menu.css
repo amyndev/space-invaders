@@ -1,0 +1,46 @@
+.menu-button {
+    -fx-background-color: transparent;
+    -fx-padding: 20px;
+    -fx-border-color: #333333;
+    -fx-border-width: 2px;
+    -fx-border-radius: 10px;
+    -fx-cursor: hand;
+    -fx-transition: all 0.3s ease;
+}
+
+.menu-button:hover {
+    -fx-background-color: rgba(0, 255, 0, 0.1);
+    -fx-border-color: #00ff00;
+    -fx-effect: dropshadow(gaussian, #00ff00, 15, 0.3, 0, 0);
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+.menu-button:pressed {
+    -fx-scale-x: 0.95;
+    -fx-scale-y: 0.95;
+}
+
+.button-label {
+    -fx-font-family: 'Roboto', sans-serif;
+    -fx-font-size: 18px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}
+
+/* Animation for buttons */
+.menu-button {
+    -fx-animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        -fx-border-color: #333333;
+    }
+    50% {
+        -fx-border-color: #00ff00;
+    }
+    100% {
+        -fx-border-color: #333333;
+    }
+}
